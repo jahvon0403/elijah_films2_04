@@ -1,0 +1,154 @@
+/* LANDING PAGE GRID */
+
+.index_grid {
+    display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   padding:0%;
+}
+
+.welcome {
+    grid-area: welcome;
+   
+}
+
+.services {
+    grid-area:services;
+    
+}
+
+
+.prf_image {
+    grid-area:prf_image;
+   
+}
+
+.footer {
+    grid-area:footer;
+    
+}
+
+.contentgrid {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:
+    'djimgs mkimjs'
+    ;
+
+
+}
+
+
+
+
+
+/* GENERAL STYLE */
+body  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-align: center;
+    color: #91d378;
+    background-color: #181c6c;
+    margin: 0%;
+    max-width: 1200;
+   }
+
+
+    nav, ul, li, header, b {
+    list-style: none;
+   }
+
+a {
+    color:white;
+}
+
+
+/*---------NAV STYLE-------*/
+
+.navbar {
+    display:flex;
+    align-items: center;
+    list-style: none;
+    background: rgb(182, 190, 196);
+    padding: .3em;
+    margin: 0 auto;
+}
+
+
+/*---Style nav links---*/
+.navbar a{
+    color: rgb(39, 31, 31);
+    padding: 60px;
+}
+
+
+/* hoverstyle*/
+.navbar a:hover {
+    background-color: #181c6c;
+    color: rgb(57, 79, 94);
+    background-size: 20px;
+}
+
+
+/*Universal Layout*/
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+  img {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+ 
+}
+
+
+
+/* About Me Page */
+
+.profile {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+  img {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+}
+
+
+
+
+/* HERO IMAGE */
+
+.hero_image {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(Images_portfolio/mortal_kontest_BTS_5.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.hero_header {
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
